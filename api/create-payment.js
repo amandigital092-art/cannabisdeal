@@ -1,7 +1,7 @@
 import CryptoJS from "crypto-js";
 
 export default async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "https://greenleaf.website");
+  res.setHeader("Access-Control-Allow-Origin", "https://cannabisdeal.online/");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
@@ -30,12 +30,12 @@ export default async function handler(req, res) {
       currency: "USD",
       timestamp: timestamp,
       userName: name,
-      siteName: "GreenLeaf",
+      siteName: "cannabisdeal",
       userEmail: email,
-      redirectUrl: "https://greenleaf.website/payment-success",
-      websiteUrl: "https://greenleaf.website",
-      cancelUrl: "https://greenleaf.website/payment-failed",
-      webhookUrl: "https://greenleaf.website/api/webhook"
+      redirectUrl: "https://cannabisdeal.online/payment-success",
+      websiteUrl: "https://cannabisdeal.online/",
+      cancelUrl: "https://cannabisdeal.online/payment-failed",
+      webhookUrl: "https://cannabisdeal.online/api/webhook"
     };
 
     const key = CryptoJS.enc.Utf8.parse(secret);
